@@ -4,5 +4,5 @@ packages:
   - apache2
 runcmd:
   - wget "https://dcassetcdn.com/design_img/3143973/83038/83038_17473254_3143973_9517d219_image.jpg" -O /var/www/html/83038_17473254_3143973_9517d219_image.jpg
-  - echo "<body style="background-color:darkblue\;">"<img src=\"https://dcassetcdn.com/design_img/3143973/83038/83038_17473254_3143973_9517d219_image.jpg\" alt=\"chmurowisko\">" | tee /var/www/html/index.html
+  - echo "<body style="background-color:darkblue\;"><img src=\"https://dcassetcdn.com/design_img/3143973/83038/83038_17473254_3143973_9517d219_image.jpg\" alt=\"chmurowisko\">" | tee /var/www/html/index.html
   - service apache2 restart
