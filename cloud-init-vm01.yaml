@@ -1,0 +1,7 @@
+#cloud-config
+package_upgrade: true
+packages:
+  - apache2
+runcmd:
+  - echo "<body style="background-color:red\;"><h1>VM01</h1>" | tee /var/www/html/index.html
+  - service apache2 restart

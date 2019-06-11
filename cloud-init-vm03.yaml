@@ -1,0 +1,8 @@
+#cloud-config
+package_upgrade: true
+packages:
+  - apache2
+runcmd:
+  - wget "http://info-poster.eu/wp-content/uploads/2012/06/kaczor-donald-299x419.jpg" -O /var/www/html/kaczor-donald-299x419.jpg
+  - echo "<img src=\"http://info-poster.eu/wp-content/uploads/2012/06/kaczor-donald-299x419.jpg\" alt=\"Donald\">" | tee /var/www/html/index.html
+  - service apache2 restart
